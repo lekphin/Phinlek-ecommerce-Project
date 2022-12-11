@@ -1,0 +1,110 @@
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+nav{
+    background-color:rgb(235, 233, 233);
+    display: flex;
+    justify-content:space-between;
+    position: sticky;
+    top: 0;
+}
+.logo ,img{
+   border-radius: 70%;
+   margin-left: 50px;
+}
+.center{
+    margin-top: 2%;
+}
+#myInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+}
+.main-left h1 {
+    margin-left: 30px;
+}
+.button{
+    margin-left: 50px;
+    padding: 8px;
+    width: 50%;
+    cursor: pointer;
+    border: none;
+    background-color:rgb(235, 233, 233);
+}
+button{
+    padding: 6px;
+    width: 50%;
+   margin-left: 55px;
+   background-color:rgb(235, 233, 233);
+   border: none;
+}
+/* #avocado,#strawberry{
+    margin-bottom: 20px;
+}
+#kiwi,#blackberry{
+    margin-top:40px ;
+}
+#pomegranate{
+    margin-top: 20px;
+} */
+.nav-left, ul, li{
+    display: flex;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    cursor: pointer;
+}
+main{
+    height: 80%;
+    display: flex;
+   background-image: url(../../image/b.png);
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    box-sizing: border-box;
+}
+.card{
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color:rgb(254, 252, 252);
+}
+footer{
+    background-color:rgb(235, 233, 233);
+    display: flex;
+}
+.foot, h2{
+    margin-left: 10%;
+}
+.follow, .contect{
+    margin-left: 20%;
+}
+.follow h2{
+    margin-left: 10px;
+}
+h1, h2{
+    margin-left: 30px;
+}
+.fa-facebook, .fa-twitter, .fa-google, .fa-instagram, .fa-skype{
+    padding: 15px;
+    background-color:rgba(0, 0, 255, 0.227);
+    border-radius: 20px;
+}
+.image {
+    width: 300px;
+}
+menu{
+    display: flex;
+}
+#onCancleDetail #onAddToCard{
+    padding: 50px;
+    width: 20%;
+}
+.detail_pImg, .img{
+    padding: 10px;
+}

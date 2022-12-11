@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../../image/logo.png" id="menuimage" alt="">
+        </div>
+        <div class="center">
+            <input type="text" id="myInput"placeholder="Search for names.." title="Type in a name">
+        </div>
+        <div class="nav-left">
+            <ul>
+                <li><a href="">HOME</a> </li>
+                <li>SHOP</li>
+                <li><a href="../customer/index.html">SELLER</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="edit-view">
+        <div id="product-add">
+          <button id="add" onclick="onAddproduct()"> Add Product</button>
+  
+          <div id="products-container"></div>
+        </div>
+    </div>
+    <form id="form" style="display:none ;">
+       <div class="name">
+            <label for=" name">Name:</label> <br>
+            <input id="name" type="text">
+        </div>
+        <div class="description">
+            <label for="description">Description:</label> <br>
+            <input id="description" type="text">
+        </div>
+        <div class="price">
+            <label for="price">Price:</label> <br>
+            <input id="price" type="number">
+        </div>
+        <div class="image">
+            <label for="image">image:</label> <br>
+            <input id="image" type="text">
+        </div>
+        <div class="submit">
+            <button onclick="onCancel()" id="cancel">Cancel</button>
+            <button onclick="onCreate()" id="create">Create</button>
+        </div> 
+    </form>
+    
+    <table > 
+        <thead>
+            <tr>  
+                <th>Image</th>  
+                <th>Name</th>  
+                <th>Descrption</th>  
+                <th>Price</th>  
+                <th>Actions</th>   
+            </tr> 
+        </thead> 
+        <tbody id="tbody">
+           
+        </tbody> 
+    </table>
+</body>
+<script src="js/script.js">  </script> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
