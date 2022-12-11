@@ -21,7 +21,7 @@ for (let i= 0;i< products.length;i++){
     
     //create class img and append in card
     let image1 = document.createElement("div");
-    image1.classList.add("img");
+    image1.id = "img";
     card.appendChild(image1);
 
     
@@ -85,10 +85,10 @@ let dom_detail = document.getElementById("product_dialog");
 
 
 function  onDetail(event){
-    // console.log(dom_detail_container);
+   
     let onDetail_index = event.target.dataset.index;
     dom_detail_container.style.display = "block";
-    // console.log(onDetail_index)
+   
 
     
 
@@ -96,15 +96,15 @@ function  onDetail(event){
     product_dialog.id = "product_dialog";
     dom_detail_container.appendChild(product_dialog);
 
-    // console.log(product_dialog)
+    
 
     let dom_dialog = document.querySelector("dialog");
     dom_dialog.remove();
-    console.log(dom_dialog);
+   
     let dialog = document.createElement("dialog");
     dialog.open = "open"
     product_dialog.appendChild(dialog);
-    console.log(dialog);
+   
 
 
     let header = document.createElement("header");
@@ -159,11 +159,10 @@ function  onDetail(event){
     button2.textContent = "Add to Card";
     menu.appendChild(button2);
     dialog.appendChild(menu);
-    console.log(document)
 }
 function onCancleDetail(){
     dom_detail_container.style.display = "none";
-    console.log("HEllo")
+    
 }
 
 const input_field = document.getElementById("myInput");
